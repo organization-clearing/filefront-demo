@@ -1,0 +1,25 @@
+1.整体的文件传输位置分为三个部分：front / middle / core
+
+2:熟悉Quartz接口的使用。（通过源码的方式）
+https://blog.csdn.net/yuanlaishini2010/article/details/8874991
+
+3.应该抽取出公共模块来FTP / XStream等
+
+4.【XStream】Notic that the fields are private,XStream donesn't care about the visibility of the fields.
+	即封装在XML反序列化时不起作用，权限修饰是否仅仅在编译器起作用？
+	
+5.【XStream】Now,to make the XML outputted by XStream more concise, you can create aliases for your custom class names to XML element names. 
+	类似于注册联系Java类和XML节点的关系。
+
+
+
+
+
+
+
+
+
+
+
+
+

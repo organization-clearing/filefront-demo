@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filefront>
+	<business name = "0068">
+	 	<incoming>
+			<MerchantFile name = "咪咕在线对账文件">
+				<downloadPath>/0068/account</downloadPath>
+				<uploadPath>/incoming/file_interface/0068/account/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0068/incoming</fileCoreBackupPath>
+				<localPath>/local/input/0068/account</localPath>
+				<checkRules>^MGZXJFMX((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)\.CMCC(\.gz)?$</checkRules>
+			</MerchantFile>
+			
+			<MerchantFile name = "咪咕在线核减文件">
+				<downloadPath>/0068/subtract</downloadPath>
+				<uploadPath>/incoming/file_interface/0068/subtract/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0068/incoming</fileCoreBackupPath>
+				<localPath>/local/input/0068/subtract</localPath>
+				<checkRules>^DMGZXJF((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)\.CMCC(\.gz)?$</checkRules>
+			</MerchantFile>
+		</incoming>
+		
+		<outgoing>
+			<MerchantFile name = "咪咕在线差异回盘文件">
+				<downloadPath>/for_filefront/0068/account/boss</downloadPath>
+				<uploadPath>/wzw/incoming/file_interface/0068/account/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0068/outgoing</fileCoreBackupPath>
+				<localPath>/opt/upay/data/work/0068/account</localPath>
+				<checkRules>^MGZXJFHP((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.CMCC\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)(\.gz)?$</checkRules>
+				<isCompress>true</isCompress>
+			</MerchantFile>
+			
+			<MerchantFile name = "咪咕在线核减差异回盘文件">
+				<downloadPath>/for_filefront/0068/subtract/boss</downloadPath>
+				<uploadPath>/wzw/incoming/file_interface/0068/subtract/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0068/outgoing</fileCoreBackupPath>
+				<localPath>/opt/upay/data/work/0068/subtract</localPath>
+				<checkRules>^DMGZXJF((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.CMCC\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)(\.gz)?$</checkRules>
+				<isCompress>true</isCompress>
+			</MerchantFile>
+			
+			<MerchantFile name = "咪咕在线错误反馈文件(包括对账和核减)">
+				<downloadPath>/for_filefront/0068/error</downloadPath>
+				<uploadPath>/wzw/incoming/file_interface/0068/error</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0068/outgoing</fileCoreBackupPath>
+				<localPath>/opt/upay/data/work/0068/error</localPath>
+				<checkRules>^F\d{3}(MGZXJFMX|DMGZXJF)((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.CMCC\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)(\.gz)?$</checkRules>
+				<backupPath>/opt/upay/data/backup/0068/error/boss</backupPath>
+				<isCompress>true</isCompress>
+			</MerchantFile>
+		</outgoing>
+	</business>
+	
+	<business name = "0071">
+	 	<incoming>
+			<MerchantFile name = "互联网在线对账文件">
+				<downloadPath>/0071/account</downloadPath>
+				<uploadPath>/incoming/file_interface/0071/account/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0071/incoming</fileCoreBackupPath>
+				<localPath>/local/input/0071/account</localPath>
+				<checkRules>^HLWZXJFMX((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)\.CMCC(\.gz)?$</checkRules>
+			</MerchantFile>
+			
+			<MerchantFile name = "互联网在线核减文件">
+				<downloadPath>/0071/subtract</downloadPath>
+				<uploadPath>/incoming/file_interface/0071/subtract/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0071/incoming</fileCoreBackupPath>
+				<localPath>/local/input/0071/subtract</localPath>
+				<checkRules>^DHLWZXJF((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)\.CMCC(\.gz)?$</checkRules>
+			</MerchantFile>
+		</incoming>
+		
+		<outgoing>
+			<MerchantFile name = "互联网在线差异回盘文件">
+				<downloadPath>/for_filefront/0071/account/boss</downloadPath>
+				<uploadPath>/wzw/incoming/file_interface/0071/account/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0071/outgoing</fileCoreBackupPath>
+				<localPath>/opt/upay/data/work/0071/account</localPath>
+				<checkRules>^HLWZXJFHP((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.CMCC\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)(\.gz)?$</checkRules>
+				<isCompress>true</isCompress>
+			</MerchantFile>
+			
+			<MerchantFile name = "互联网在线核减差异回盘文件">
+				<downloadPath>/for_filefront/0071/subtract/boss</downloadPath>
+				<uploadPath>/wzw/incoming/file_interface/0071/subtract/boss</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0071/outgoing</fileCoreBackupPath>
+				<localPath>/opt/upay/data/work/0071/subtract</localPath>
+				<checkRules>^DHLWZXJF((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.CMCC\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)(\.gz)?$</checkRules>
+				<isCompress>true</isCompress>
+			</MerchantFile>
+			
+			<MerchantFile name = "互联网在线错误反馈文件(包括对账和核减)">
+				<downloadPath>/for_filefront/0071/error</downloadPath>
+				<uploadPath>/wzw/incoming/file_interface/0071/error</uploadPath>
+				<fileCoreBackupPath>/backup/temporary/0071/outgoing</fileCoreBackupPath>
+				<localPath>/opt/upay/data/work/0071/error</localPath>
+				<checkRules>^F\d{3}(HLWZXJFMX|DHLWZXJF)((([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))0229))(00[1-9]|0[1-9][0-9]|[1-9]\d{2})\.CMCC\.(100|471|220|531|311|351|551|210|250|571|591|898|200|771|971|270|731|791|371|891|280|230|290|851|871|931|951|991|431|240|451)(\.gz)?$</checkRules>
+				<backupPath>/opt/upay/data/backup/0071/error/boss</backupPath>
+				<isCompress>true</isCompress>
+			</MerchantFile>
+		</outgoing>
+	</business>
+</filefront>

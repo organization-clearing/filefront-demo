@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 任务对象 -->
+	<bean id="ftomJob" class="org.dongyao.job.FrontToMiddleJob" />
+
+	<!-- JobDetail对象 -->
+	<bean id="ftomJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="ftomJob" />
+		<property name="targetMethod" value="execute" />
+	</bean>
+
+	<!-- Trigger对象 -->
+	<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+		<property name="jobDetail" ref="ftomJobDetail" />
+		<property name="startDelay" value="3" />
+		<property name="repeatInterval" value="200000" />
+	</bean>
+
+
+	<!-- <bean id="ftomTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean"> 
+		<property name="jobDetail" ref="ftomJobDetail"/> <property name="cronExpression" 
+		value="0/30 * * * * ?" /> </bean> -->
+
+
+	<!-- Scheduler对象 -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="simpleTrigger" />
+			</list>
+		</property>
+	</bean>
+
+</beans>
